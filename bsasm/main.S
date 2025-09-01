@@ -1,7 +1,7 @@
 .data
 
 message:
-  .ascii "hi\n"
+  .ascii "hii\n"
 
 .text
 
@@ -10,7 +10,7 @@ message:
 _start:
   mov x0, #1
   ldr x1, =message
-  mov x2, #3
+  mov x2, #4
   mov w8, #64
   svc #0
   b .
